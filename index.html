@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Landing Page</title>
+</head>
+
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#"> Sign in</a>
+    <a href="#"> Flights</a>
+    <a href="#"> Stays</a>
+    <a href="#"> Car Rental</a>
+    <a href="#"> Things to do</a>
+    <a href="#"> Explore</a>
+    <a href="#"> Trips</a>
+  </div>
+  <div class="bars">
+    <div class="icons">
+      <button onclick="openNav()" onmouseover="openNav()">
+        <img src="Images Used/menu.png" alt="" />
+      </button>
+      <button onclick="openNav()" onmouseover="openNav()">
+        <img src="Images Used/refer.png" alt="" />
+      </button>
+      <button onclick="openNav()" onmouseover="openNav()">
+        <img src="Images Used/airplane.png" alt="" />
+      </button>
+      <button onclick="openNav()" onmouseover="openNav()">
+        <img src="Images Used/beds.png" alt="" />
+      </button>
+      <button onclick="openNav()" onmouseover="openNav()">
+        <img src="Images Used/car.png" alt="" />
+      </button>
+      <button onclick="openNav()" onmouseover="openNav()">
+        <img src="Images Used/to-do-list.png" alt="" />
+      </button>
+      <button onclick="openNav()" onmouseover="openNav()">
+        <img src="Images Used/location.png" alt="" />
+      </button>
+      <button onclick="openNav()" onmouseover="openNav()">
+        <img src="Images Used/notebook.png" alt="" />
+      </button>
+    </div>
+
+    <div class="navbar">
+      <div class="logo">
+        <img src="Images Used/logo.png" alt="" />
+      </div>
+      <div class="items">
+        <div class="item1">
+          <a href="#"> Trips </a>
+        </div>
+        <div class="item2">
+          <a href="#">
+            <button type="submit">
+              <img src="Images Used/refer.png" alt="" />
+              Sign in
+            </button></a>
+        </div>
+        <div class="item3">
+          <a href="#"><img src="Images Used/india.png" alt="" /></a>
+        </div>
+        <div class="item4">
+          <a href="#"><img src="Images Used/rupee.png" alt="" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="head">
+    <h1>Find and compare cheap flights</h1>
+    <div class="main">
+      <div class="date">
+
+        <div class="date1">
+          <input type="text" placeholder="From?">
+        </div>
+        <div class="date2">
+          <a href="#"><img src="Images Used/transfer.png" alt=""></a>
+        </div>
+        <div class="date3">
+          <input type="text" placeholder="To?">
+        </div>
+        <div class="date4">
+
+          <input type="date">
+          <span> | </span>
+          <input type="date">
+        </div>
+      </div>
+      <div class="search">
+        <button class="btn" type="submit"><a href="#">
+            Search
+          </a></button>
+      </div>
+
+    </div>
+
+    <div class="city">
+      <h1>Trending Cities</h1>
+      <h3>The most searched for cities on momondo</h3>
+      <div class="cities">
+        <div class="city1">
+          <img src="Images Used/kolkata.jpg" alt="">
+          <p>FLIGHTS TO <br><b>Kolkata</b></p>
+        </div>
+        <div class="city2">
+          <img src="Images Used/amsterdam.webp" alt="">
+          <p>FLIGHTS TO <br><b>Amsterdam</b></p>
+        </div>
+        <div class="city3">
+          <img src="Images Used/Dubai.jpg" alt="">
+          <p>FLIGHTS TO <br><b>Dubai</b></p>
+        </div>
+        <div class="city4">
+          <img src="Images Used/berlin.jpg" alt="">
+          <p>FLIGHTS TO <br><b>Berlin</b></p>
+        </div>
+        <div class="city5">
+          <img src="Images Used/San.jpg" alt="">
+          <p>FLIGHTS TO <br><b>San Fracisco</b></p>
+        </div>
+        <div class="city6">
+          <img src="Images Used/lisbon.jpg" alt="">
+          <p>FLIGHTS TO <br><b>Lisbon</b></p>
+        </div>
+        <div class="city7">
+          <img src="Images Used/LA.jpg" alt="">
+          <p>FLIGHTS TO <br><b>Los Angeles</b></p>
+        </div>
+        <div class="city8">
+          <img src="Images Used/chicago.jpg" alt="">
+          <p>FLIGHTS TO <br><b>Chicago</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="main1">
+      <div class="content">
+        <h1>Flight deals by destination</h1>
+        <h3>Find and compare cheap flights</h3>
+        <h4>We search and compare billions of real-time prices on plane tickets so you can easily find the <br>
+          cheapest, quickest, and best flight deals for you.</h4>
+      </div>
+
+      <div class="drop">
+        <div class="flight1">
+          <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Mumbai Flights<span class="arrow">˅</span>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="#">Flights from Mumbai to Delhi</a>
+              <a href="#">Flights from Mumbai to Dubai</a>
+              <a href="#">Flights from Mumbai to Japan</a>
+            </div>
+          </div>
+        </div>
+        <div class="flight2">
+          <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction1()">Pune Flights<span class="arrow">˅</span>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown1">
+              <a href="#">Flights from Pune to Delhi</a>
+              <a href="#">Flights from Pune to Dubai</a>
+              <a href="#">Flights from Pune to Japan</a>
+            </div>
+          </div>
+        </div>
+        <div class="flight3">
+          <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction2()">Banglore Flights<span class="arrow">˅</span>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown2">
+              <a href="#">Flights from Banglore to Delhi</a>
+              <a href="#">Flights from Banglore to Dubai</a>
+              <a href="#">Flights from Banglore to Japan</a>
+            </div>
+          </div>
+        </div>
+        <div class="flight4">
+          <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction3()">Kolkata Flights<span class="arrow">˅</span>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown3">
+              <a href="#">Flights from Kolkata to Delhi</a>
+              <a href="#">Flights from Kolkata to Dubai</a>
+              <a href="#">Flights from kolkata to Japan</a>
+            </div>
+          </div>
+        </div>
+        <div class="flight5">
+          <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction4()">Dubai Flights<span class="arrow">˅</span>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown4">
+              <a href="#">Flights from Dubai to Delhi</a>
+              <a href="#">Flights from Dubai to Mumbai</a>
+              <a href="#">Flights from Dubai to Japan</a>
+            </div>
+          </div>
+        </div>
+        <div class="flight6">
+          <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction5()">Toronto Flights<span class="arrow">˅</span>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown5">
+              <a href="#">Flights from Toronto to Delhi</a>
+              <a href="#">Flights from Toronto to Dubai</a>
+              <a href="#">Flights from Toronto to Japan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quote">
+      <blockquote>Best website for booking tickets. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
+        assumenda corrupti accusantium! Nemo consequatur, praesentium quidem quis id ex non.</blockquote>
+      <cite>Random Name</cite>
+    </div>
+
+    <div class="main2">
+      <h1>A little bit more about momondo flights</h1>
+      <h2>Here’s why travellers use momondo as their free service to find cheap flights</h2>
+      <div class="content1">
+        <div class="box1">
+          <h3>Get the best deals</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, id laborum. Odit, asperiores accusantium?
+            Tenetur at officiis quod tempore praesentium facilis tempora consequatur labore! Commodi reprehenderit natus
+            velit adipisci consequatur.</p>
+        </div>
+        <div class="box2">
+          <h3>100% price transparency</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, blanditiis maxime provident distinctio
+            eius quod quae soluta minima aliquam aut corrupti incidunt, earum illo, tempora molestias! Itaque, corporis
+            repellendus! Deleniti enim porro eius sit impedit?</p>
+        </div>
+        <div class="box3">
+          <h3>Trusted and free</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae assumenda excepturi fugiat beatae,
+            minus corporis sed quod impedit a adipisci pariatur ipsa suscipit dolores fugit.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="foot">
+      <div class="foot1">
+        <h3>Company</h3>
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Mobile</a>
+        <a href="#">How we work</a>
+      </div>
+      <div class="foot2">
+        <h3>Contact</h3>
+        <a href="#">Help/FAQ</a>
+        <a href="#">Press</a>
+        <a href="#">Affiliates</a>
+      </div>
+      <div class="foot3">
+        <h3>More</h3>
+        <a href="#">Airline fees</a>
+        <a href="#">Airlines</a>
+      </div>
+      <div class="foot4">
+        <h3>Site/Currency</h3>
+        <select name="" id="">
+          <option value="">
+            India</option>
+          <option value="">USA</option>
+          <option value="">UK</option>
+          <option value="">Australia</option>
+          <option value="">Canada</option>
+        </select>
+        <select name="" id="">
+          <option value="">Indian Rupees</option>
+          <option value="">US Dollars</option>
+          <option value="">Euro</option>
+          <option value="">Australian Dollars</option>
+          <option value="">Canadian Dollars</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms and Condition</a>
+        &copy momondo
+      </div>
+    </div>
+
+    <div class="social">
+
+      <a href="#" class="one"><img src="Images Used/facebook.png" alt=""></a>
+      <a href="#" class="two"><img src="Images Used/instagram.png" alt=""></a>
+      <a href="#" class="three"><img src="Images Used/twitter.png" alt=""></a>
+    </div>
+    <div class="last">
+      <div class="text">
+        &copy Nisarg Shah
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
